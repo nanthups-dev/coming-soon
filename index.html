@@ -5,10 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #gradient {
+            height: 200px;
+            background-color: #df5bd3;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, #df5bd3, #7e5bf6);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="min-h-screen bg-gray-900 flex flex-col items-center justify-center">
+    <div id="gradient" class="min-h-screen bg-gray-900 flex flex-col items-center justify-center">
         <h1 class="text-5xl text-white font-bold mb-8 animate-pulse">
             Coming Soon
         </h1>
